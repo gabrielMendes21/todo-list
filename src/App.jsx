@@ -18,6 +18,7 @@ export default function App() {
                 event.target.value = ""
               }
             }}
+            autoComplete="off"
             id="task"
             type="text"
             placeholder="Coloque sua tarefa aqui"
