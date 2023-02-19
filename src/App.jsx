@@ -1,9 +1,9 @@
-import Task from './components/Task'
-import './index.css'
-import { useState } from 'react'
-import { Fade } from 'react-reveal'
+import Task from "./components/Task"
+import "./index.css"
+import { useState } from "react"
+import { Fade } from "react-reveal"
 import { v4 } from "uuid"
-import { ArrowDown } from 'phosphor-react'
+import { ArrowDown } from "phosphor-react"
 
 export default function App() {
   const [tasks, setTasks] = useState([])
@@ -27,12 +27,12 @@ export default function App() {
             className="w-4/5 placeholder:text-center text-center focus:outline-none focus:border-cyan-500 transition border-b-2 text-md lg:text-3xl"
           />
           <a href="#tasks" className="absolute bottom-6">
-            <ArrowDown size={36} />
+            <ArrowDown size={36} className="md:hidden" />
           </a>
         </div>
 
         <hr className="h-1 w-11/12 text-center bg-zinc-300 my-10 md:hidden" />
-        
+
         <div id="tasks" className="flex flex-col justify-center items-center text-2xl lg:text-4xl text-zinc-400 md:border-l-2 h-full">
           {
             tasks.length === 0 ?
@@ -43,6 +43,7 @@ export default function App() {
               )
             })
           }
+          {console.log(tasks)}
         </div>
       </Fade>
     </div>
