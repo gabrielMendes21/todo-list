@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className='flex flex-col justify-center md:grid md:grid-cols-2 items-center'>
       <Fade left>
-        <div className='flex flex-col items-center justify-center h-screen gap-6 md:border-r-2 p-1'>
+        <div className='flex flex-col items-center justify-center h-[90vh] md:h-screen gap-6 md:border-r-2 p-1'>
           <label htmlFor="task" className='font-bold text-4xl lg:text-6xl'>Adicione uma tarefa</label>
           <input
             onKeyDown={(event) => {
@@ -43,7 +43,6 @@ export default function App() {
               )
             })
           }
-          {console.log(tasks)}
         </div>
       </Fade>
     </div>
