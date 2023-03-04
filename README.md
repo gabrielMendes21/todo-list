@@ -1,7 +1,7 @@
 # TODO list
 A simple TODO list to add tasks
 
-> Status: Developing
+> Status: finished ✔️
 
 ## Technologies:
 * React
